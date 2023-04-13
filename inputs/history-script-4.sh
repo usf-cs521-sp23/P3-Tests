@@ -404,7 +404,7 @@ echo Command 402
 echo Command 403
 echo Command 404
 echo Command 405
-who
+who -a
 echo Command 407
 echo Command 408
 echo Command 409

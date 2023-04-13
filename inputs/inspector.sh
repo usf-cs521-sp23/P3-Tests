@@ -6,5 +6,5 @@ cat /proc/sys/kernel/hostname
 echo -n Kernel Version: 
 cat /proc/sys/kernel/osrelease
 echo Logged in Users:
-who
+who -a
 
