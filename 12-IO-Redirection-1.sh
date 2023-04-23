@@ -10,8 +10,8 @@ echo Hello world this is a nice long message to save to a file > ${TEST_DIR}/tes
 cat /etc/passwd > ${TEST_DIR}/testfile2
 echo And here is another message saved to a different file > ${TEST_DIR}/testfile3
 
-sort < /etc/passwd > ${TEST_DIR}/testfile4
-sort >> ${TEST_DIR}/testfile4 < /etc/hostname
+sort -- < /etc/passwd > ${TEST_DIR}/testfile4
+sort -- >> ${TEST_DIR}/testfile4 < /proc/sys/kernel/hostname
 echo We just printed the password file in sorted >> ${TEST_DIR}/testfile4
 echo order followed by hostname. >> ${TEST_DIR}/testfile4
 
